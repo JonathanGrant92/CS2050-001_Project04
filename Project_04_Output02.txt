@@ -1,0 +1,25 @@
+Record of Students' Grades Report
+
+900123456	Jake	Dog	jakedog@msudenver.edu
+	GradeItems
+	1	23456	HW		20190112	100		95
+=========================================================
+Total								100		95		95.0%
+
+900362827	Ding	Dong	dingdong1@msudenver.edu
+	GradeItems
+	1	94847	Test		20180214	150		127
+=========================================================
+Total								150		127		84.67%
+
+900987123	Eliza	Smith	elizasmith1@msudenver.edu
+	GradeItems
+	1	94847	Test		20180214	150		127
+=========================================================
+Total								150		127		84.67%
+
+900789329	John	Smith	johnsmith1@msudenver.edu
+	GradeItems
+	1	94847	Test		20180214	145		127
+=========================================================
+Total								145		127		87.59%

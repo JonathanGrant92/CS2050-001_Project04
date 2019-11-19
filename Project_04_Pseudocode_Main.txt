@@ -1,0 +1,66 @@
+Project 4 Pseudocode Main
+
+BrendanBassettJonathanGrant_04 Class
+Declare string variable for the file name.
+Declare private string variable constants INPUT_FILE and OUTPUT_FILE.
+Declare two List objects for Students and GradeItems.
+
+main method.
+Define main method header with args String array argument.
+Declare string variable for the file numbers.
+Instantiate the list arrays for Student and GradeItem objects.
+Print the program header.
+Iteratively process each INPUT_FILE by file number and call the processInput method.
+Generate a report using a method for each INPUT_FILE.
+Print the report and write it to an OUT_FILE that corresponds to its INPUT_FILE.
+Clear the Student and GradeItem lists for next INPUT_FILE.
+
+processInput method.
+Open input file, displaying error message if file is not found.
+Read data lines.
+Call split method to parse the line to a String array of fields.
+If first field of the array is Student, call the processStudentData method and pass the array.
+If first field of the array is Student, call the processGradeItemData method and pass the array.
+
+Process Student Data Method
+
+Define processStudentData method header with info String array argument.
+
+If second field of the String array is add, call Student constructor on line of fields.
+Use equals method on Student objects of list array for students to find a duplicate.
+If there is a duplicate student, display error message that includes Student ID.
+If there is no duplicate student, add new student object to list with the add method.
+
+If second field of the String array is del, then call Student constructor on line of fields.
+Call the remove method to remove instance of Student from the list arrays.
+Check return of remove method.
+If no entry found, display message using err stream.
+
+Catch exceptions thrown by Student constructor and display message using err stream.
+If the second field is neither add nor del, display error message saying so with the second field.
+
+Process Grade Item Data Method
+
+Define processGradeItemData method header with info String array argument.
+
+If second field of the String array is add, call GradeItem constructor on line of fields.
+Use equals method on GradeItem objects of list array for students to find a duplicate.
+If there is a duplicate GradeItem, display error message with Student ID and GradeItem ID.
+If there is no duplicate GradeItem, add new GradeItem object to list with the add method.
+
+If second field of the String array is del, then call GradeItem constructor on line of fields.
+Call the remove method to remove instance of GradeItem from the list arrays.
+Check return of remove method.
+If no entry found, display message using err stream.
+
+Catch exceptions thrown by GradeItem constructor and display message using err stream.
+If the second field is neither add nor del, display error message saying so with the second field.
+
+Generate Report Method
+
+Define generateReport method header.
+Call toArray method on list of Student objects.
+Call toArray method on list of GradeItem objects.
+Open a new file with specified name or create it.
+For each Student in the Student list, search the GradeItem list by matching Student Ids, and
+write the information to the open file and print to console.

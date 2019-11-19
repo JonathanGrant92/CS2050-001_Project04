@@ -1,0 +1,88 @@
+Project 4 Pseudocode Lists
+
+Declare firstNode which points to the first Node of the list. 
+
+ADD METHOD (No position) 
+This method adds the new node to the beginning of the list. Create a new node around the given item data. 
+If the first node is not empty, set the next node of the new node to point to the first node using the setNextNode method. 
+Set the first node equal to the new node. 
+Return true regardless of anything that happens. 
+
+ADD METHOD (position given) 
+This method adds the new node to the list at the position specified. Create a new node around the given item data. 
+If the first node is empty, set it equal to the new node. 
+
+Otherwise, create an integer variable called currentPosition which is the current position on the chain. 
+Create a Node variable called currentNode which is the current node being looked at. 
+
+Iterate through the nodes, starting at first node. 
+If the current position is not equal to the position given, move to the next node. 
+Get to the next node by setting currentNode equals to getNextNode on the currentNode. Increment currentPosition by 1. 
+
+If the current position is equal to the position given... 
+Use setNextNode method on new Node equal to currentNode's next node. Use setNextNode method on currentNode equal to the new Node. 
+
+
+Return true regardless of anything that happens. 
+
+REMOVE METHOD 
+If the first node is blank, return false. 
+Otherwise, create a Node variable called currentNode which is the current node being looked at. Set currentNode to firstNode. 
+Iterate through the nodes, while currentNode's next node is not null. 
+
+If the currentNode's next node is not equal to the given node to remove... 
+Get to the next node by setting currentNode equals to getNextNode on the currentNode. Otherwise, a match is found... 
+Set the currentNode's next node equal to the currentNode's next node's next node.
+
+Return true. 
+
+
+Return false if the list is iterated through without finding a match. 
+
+CLEAR 
+Set the first node equal to null. 
+
+GET CURRENT SIZE 
+Create an integer called counter equal to 0. 
+If first node is not null, create a Node variable called currentNode which is the current node being looked at. 
+Set currentNode to firstNode. 
+
+Iterate through the nodes, while currentNode's next node is not null. During each loop, increment counter by one. 
+
+Once the loop is complete, return counter. 
+
+IS EMPTY 
+If first node is equal to null, return true. Otherwise, return false. 
+
+GET FREQUENCY OF 
+Create an integer called counter equal to 0. 
+If the first node is not null, create a Node variable called currentNode which is the current node being looked at. 
+Set currentNode to firstNode. 
+Iterate through the nodes, while currentNode's next node is not null. 
+
+If the currentNode's next node's data is equal to the data given... Increment the counter by one. 
+
+Regardless of whether a match is found, get to the next node by setting currentNode equals to getNextNode on the currentNode. 
+When the loop is complete, return the counter. 
+
+CONTAINS 
+If the first node is not null, create a Node variable called currentNode which is the current node being looked at. 
+Set currentNode to firstNode. 
+Iterate through the nodes, while currentNode's next node is not null. If the currentNode's next node's data is equal to the data given... Return true.
+
+If a match is not found, get to the next node by setting currentNode equals to getNextNode on 
+the currentNode. 
+If the loop completes without finding a match(or if first node is null), return false. 
+
+TO ARRAY 
+Create an Object array called returnArray with the dimension equals to the result of the getCurrentSize method. 
+Create an integer called index equal to 0. 
+
+If the first node is not null, create a Node variable called currentNode which is the current node being looked at. 
+Set currentNode to firstNode. 
+Iterate through the nodes, while currentNode's next node is not null. 
+
+During each loop, set the entry of the returnArray with the index of index equal to currentNode. Increment index by one. 
+
+
+Once the loop is complete, return returnArray.

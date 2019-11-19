@@ -1,0 +1,22 @@
+The University Students And Grades Program
+********************************************************************************
+
+How many Project_04_InputXX text files need parsing: 
+
+Reading data from file: Project_04_Input01.txt
+Student was not added to the Students list.
+Error: The email cannot be blank and must contain the "@" character.
+Student with Student Id 900123456 was added to the list.
+Student with Student Id 900123456 is already in the list.
+Grade Item with Grade Item Id 1 and Student Id 900123456 was added to the list.
+Student with Student Id 900123457 was added to the list.
+Student with Student Id 900123458 was added to the list.
+Student with Student Id 900123459 was added to the list.
+Grade Item with Grade Item Id 2 and Student Id 900123456 was added to the list.
+Grade Item with Grade Item Id 3 and Student Id 900123456 was added to the list.
+Student with Student Id 900123457 was added to the list.
+Exception in thread "main" java.lang.NullPointerException
+	at BrendanBassettJonathanGrant_04.LList.remove(LList.java:170)
+	at BrendanBassettJonathanGrant_04.BrendanBassettJonathanGrant_04.processStudentData(BrendanBassettJonathanGrant_04.java:259)
+	at BrendanBassettJonathanGrant_04.BrendanBassettJonathanGrant_04.processInput(BrendanBassettJonathanGrant_04.java:174)
+	at BrendanBassettJonathanGrant_04.BrendanBassettJonathanGrant_04.main(BrendanBassettJonathanGrant_04.java:104)
